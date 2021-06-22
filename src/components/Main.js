@@ -39,7 +39,7 @@ const Main = () => {
   const [stateResult, dispatchResult]= useContext(UserContext);
   return (
     <Container>
-      <Grid container xs={11} md={12} className={classes.bgcontainer}  >
+      <Grid container xs={11} md={12} item className={classes.bgcontainer}  >
         <Grid item sm={1} md={3}  />
         <Grid item xs={12}  className={classes.wrapper} md={5}  sm={6}>
            <Paper variant='outlined' className={classes.paper}>

@@ -39,7 +39,7 @@ const UserResults = () => {
           <Typography className={classes.heading}>Level 1</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography component='div'>
             <ol style={{listStylePosition: 'inside'}}>
             { 
                 stateResult.l1.map(v => { return (<li key={nanoid()}>{v.num1}{' '}{v.sign === 1 ? '+' : v.sign === 2 ? '-' : '*'}{' '}{v.num2}={v.answer}{v.answer !== v.userAnswer ? <span style={{ color: 'red' }}>/({v.userAnswer})</span> : <span ><CheckIcon style={{color: 'green'}}  /></span> }</li>)})
@@ -57,7 +57,7 @@ const UserResults = () => {
           <Typography className={classes.heading}>Level 2</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography component='div'>
             <ol style={{ listStylePosition: 'inside' }}>
               {
                 stateResult.l2.map(v => { return (<li key={nanoid()}>{v.num1}{' '}{v.sign === 1 ? '+' : v.sign === 2 ? '-' : '*'}{' '}{v.num2}={v.answer}{v.answer !== v.userAnswer ? <span style={{ color: 'red' }}>/({v.userAnswer})</span> : <span ><CheckIcon style={{ color: 'green' }} /></span>}</li>) })
@@ -75,7 +75,7 @@ const UserResults = () => {
           <Typography className={classes.heading}>Level 3</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography component='div'>
             <ol style={{ listStylePosition: 'inside' }}>
               {
                 stateResult.l3.map(v => { return (<li key={nanoid()}>{v.num1}{' '}{v.sign === 1 ? '+' : v.sign === 2 ? '-' : '*'}{' '}{v.num2}={v.answer}{v.answer !== v.userAnswer ? <span style={{ color: 'red' }}>/({v.userAnswer})</span> : <span ><CheckIcon style={{ color: 'green' }} /></span>}</li>) })
